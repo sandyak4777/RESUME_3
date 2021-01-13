@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body {
+  color: #fff;
+  /* font-family: "Courier New", Courier, monospace; */
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* grid-auto-rows: minmax(100px, auto); */
+  grid-template-rows: repeat(6, minmax(100px, auto));
+  grid-gap: 10px;
+  max-width: 960px;
+  margin: 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.content div {
+  color: black;
+  /* background: #3bbced; */
+  padding: 20px;
+}
+
+.left {
+  grid-column: 1/5;
+  grid-row: 1/7;
+}
+
+.header {
+  text-align: left;
+  grid-column: 5/13;
+  grid-row: 1/3;
+}
+
+.work_experience {
+  text-align: left;
+  grid-column: 5/13;
+  grid-row: 3/7;
+}
+
+.work_title {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  /* grid-template-rows: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto); */
+  grid-template-rows: repeat(4, minmax(150px, auto));
+  grid-gap: 10px;
+}
+.work_experience h2 {
+  text-decoration: underline;
+}
+
+.work_title p {
+  border: 1px solid #fff;
+  padding: 20px;
+  margin: 0;
+}
+
+.left {
+  display: grid;
+  grid-template-rows: repeat(4, minmax(120px, auto));
+  grid-gap: 10px;
+  /* background: rgb(50, 59, 76); */
+  /* background: rgb(89, 168, 181); */
+  /* background: rgb(75, 0, 130); */
+  background: #66023c;
+}
+.left > *div {
+  border: 1px solid black;
+}
+.left .image {
+  /* text-align: center; */
+  object-fit: cover;
+  justify-self: start;
+}
+
+.left .image img {
+  width: 200px;
+  border-radius: 30px;
+}
+img {
+  margin-top: -13px;
+}
+
+.content .left .contacts {
+  color: blanchedalmond;
+}
+
+.contacts {
+  text-align: left;
+  color: white;
+}
+.contacts div {
+  color: white;
+  padding: 10px;
+}
+
+.h2 {
+  font-size: 20px;
+  text-decoration: underline;
+}
+.education {
+  text-align: left;
+}
+.education > * {
+  color: #fff;
+}
+.education h2 {
+  text-decoration: underline;
+}
+
+.skills {
+  text-align: left;
+}
+.skills h2 {
+  color: #fff;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.skill_set ul {
+  margin-top: -3px;
+  margin-left: -3px;
+}
+.skill_set ul li {
+  padding: 2px;
+  color: #fff;
+}
